@@ -17,7 +17,6 @@ jobs:
             -- ⏳ NEW PULL REQUEST --
             Sender : ${{ github.actor }}
             Github : JSON.stringify(${{ github }})
-            Actor : ${{ repo.namespace }}
             Ref : ${{ github.ref }}
             Workflow : ${{ github.workflow }}
             Event Name : ${{ github.event.name }}
