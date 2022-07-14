@@ -21,11 +21,7 @@ jobs:
 
             Pull Request : ${{ github.event.pull_request._links.html.href }}
 
-            # GitHub :
-            # echo "${{toJSON(github)}}" 
-
             Commit message: 
-            # echo "${{toJSON(github.event)}}"
             ${{ github.event.head_commit.message }}
 
             Repository: 
