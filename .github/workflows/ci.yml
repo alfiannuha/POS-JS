@@ -17,11 +17,15 @@ jobs:
             -- ⏳ NEW PULL REQUEST --
             Sender : ${{ github.actor }}
 
-            GitHub :
-            echo "${{toJSON(github)}}" 
+            Repo : ${{ github.head_ref }} -> ${{ github.base_ref }}
+
+            Pull Request : ${{ github.event.pull_request._links.html.href }}
+
+            # GitHub :
+            # echo "${{toJSON(github)}}" 
 
             Commit message: 
-            echo "${{toJSON(github.event)}}"
+            # echo "${{toJSON(github.event)}}"
             ${{ github.event.head_commit.message }}
 
             Repository: 
