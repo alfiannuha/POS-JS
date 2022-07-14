@@ -1,7 +1,5 @@
 name: telegram message
 on: 
-  push:
-    branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
 jobs:
@@ -16,9 +14,11 @@ jobs:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
           message: |
-            ${{ github.actor }} created commit:
+            -- ⏳ NEW PULL REQUEST --
+            Sender : ${{ github.actor }}
+            Branch : ${{ github.branch }}
             Commit message: ${{ github.event.commits[0].message }}
-            
+            Github : ${{ github }}
             Repository: ${{ github.repository }}
             
             See changes: https://github.com/${{ github.repository }}/commit/${{github.sha}}
