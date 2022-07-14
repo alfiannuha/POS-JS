@@ -18,6 +18,7 @@ jobs:
             Sender : ${{ github.actor }}
 
             Commit message: 
+            ${{ github.event.head_commit.message }}
             ${{ github.event.commits[0].message }}
 
             Repository: 
