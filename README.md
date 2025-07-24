@@ -1,2 +1,3 @@
-# gadungan.github.io
-Pembuatan Aplikasi POS dengan HTML, CSS, JavaScript yang dibuat pada saat magang
+# Point Of Sale
+
+Aplikasi kasir menggunakan HTML, CSS, JavaScript. 
